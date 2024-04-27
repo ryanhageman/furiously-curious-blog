@@ -202,3 +202,19 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# ╭──────────────────────────────────────────────────────────╮
+# │                         My Stuff                         │
+# ╰──────────────────────────────────────────────────────────╯
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      title:
+      categories:
+      tags:
+    posts:
+      title:
+      categories:
+      tags:
+
