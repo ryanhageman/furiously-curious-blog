@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Instruction Set Architectures
+date: 2024-08-05 17:32 -0500
 ---
-
 Instruction Set Architectures are the very basic instructions a processor can execute. These are simple things, like: 
 
 - Add these numbers
