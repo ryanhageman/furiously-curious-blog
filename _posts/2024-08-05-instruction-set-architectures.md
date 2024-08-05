@@ -27,23 +27,27 @@ ARM processors use "Reduced Instruction Set Computing" (RISC). These processors 
 
 ### ARM Processor
 
-```assembly
-mov r0, #5     ; Move the number 5 into register R0
-add r0, r0, #3 ; Add 3 to the value in R0, storing the result in R0
-```
+> Move the number 5 into register R0  
+> `mov r0, #5`     
+> 
+> Add 3 to the value in R0, storing the result in R0  
+> `add r0, r0, #3` 
+{: .prompt-info }
 
 ### Intel Processor
 
-```assembly
-mov eax, 5     ; Move the number 5 into the EAX register
-add eax, 3     ; Add 3 to the value in the EAX register
-```
+> Move the number 5 into the EAX register  
+> `mov eax, 5`     
+> 
+> Add 3 to the value in the EAX register  
+> `add eax, 3`     
+{: .prompt-info }
 
 ## Why are they different with different processors?
 
 The instruction sets are different, so the commands need to be set up differently.
 
-Even when the instruction would be the same, though, the binary code for each instruction is different. For example `mov`. For an ARM processor, `mov` might be `001110`, while for Intel it might be `1011`.
+Even when the instruction would be the same, the binary code for each instruction is different. For example `mov`. For an ARM processor, `mov` might be `001110`, while for Intel it might be `1011`.
 
 ## How it might look in binary
 
@@ -51,23 +55,22 @@ These are oversimplified examples. In real life they get very complex, quickly.
 
 ### ARM
 
-```assembly
-mov r0, #5     ; Move the number 5 into register R0
-```
-```shell
-1110 0011 1010 0000 0000000000000101
-```
+> Move the number 5 into register R0  
+> `mov r0, #5`     
+> 
+> This command in binary  
+> `1110 0011 1010 0000 0000000000000101`
+{: .prompt-info }
 
 In the beginning you have `1110`, the opcode for `mov`. `0000` is the `r0` register. The end is the number 5.
 
 ### Intel
 
-```assembly
-mov eax, 5     ; Move the number 5 into the EAX register
-```
-
-```shell
-1011 0000 00000000 00000000 00000101
-```
+> Move the number 5 into the EAX register  
+> `mov eax, 5`     
+> 
+> This command in binary  
+> `1011 0000 00000000 00000000 00000101`  
+{: .prompt-info }
 
 `1011` is the opcode for `mov` to the `eax` register. The last byte is the number 5.
