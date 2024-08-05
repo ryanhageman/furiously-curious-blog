@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Instruction Set Architectures
+categories:
+tags:
 date: 2024-08-05 17:32 -0500
+image: /assets/images/instruction-set-architectures-hero-image.webp
 ---
 Instruction Set Architectures are the very basic instructions a processor can execute. These are simple things, like: 
 
