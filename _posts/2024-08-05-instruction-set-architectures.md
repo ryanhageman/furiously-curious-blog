@@ -47,7 +47,7 @@ ARM processors use "Reduced Instruction Set Computing" (RISC). These processors 
 
 The instruction sets are different, so the commands need to be set up differently.
 
-Even when the instruction would be the same, the binary code for each instruction is different. For example `mov`. For an ARM processor, `mov` might be `001110`, while for Intel it might be `1011`.
+Even when the instruction would be the same, the [binary]({% link _posts/2024-04-27-understanding-binary-with-tacos.md %}) code for each instruction is different. For example `mov`. For an ARM processor, `mov` might be `001110`, while for Intel it might be `1011`.
 
 ## How it might look in binary
 
@@ -58,7 +58,7 @@ These are oversimplified examples. In real life they get very complex, quickly.
 > Move the number 5 into register R0  
 > `mov r0, #5`     
 > 
-> This command in binary  
+> This command in [binary]({% link _posts/2024-04-27-understanding-binary-with-tacos.md %})  
 > `1110 0011 1010 0000 0000000000000101`
 {: .prompt-info }
 
@@ -69,7 +69,7 @@ In the beginning you have `1110`, the opcode for `mov`. `0000` is the `r0` regis
 > Move the number 5 into the EAX register  
 > `mov eax, 5`     
 > 
-> This command in binary  
+> This command in [binary]({% link _posts/2024-04-27-understanding-binary-with-tacos.md %})  
 > `1011 0000 00000000 00000000 00000101`  
 {: .prompt-info }
 
