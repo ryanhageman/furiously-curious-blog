@@ -30,5 +30,5 @@ I’m all about creating innovative web applications and making tech work better
 
 ## Let’s Connect
 
-I’d love to hear from you if you’re interested in working together or just want to chat about technology. Feel free to reach out through [LinkedIn](https://www.linkedin.com/in/ryanjhageman/) or [email](mailto:ryan@ryanhageman.dev). Let’s make something great together!
+I’d love to hear from you if you’re interested in working together or just want to chat about technology. Feel free to reach out through [LinkedIn](https://www.linkedin.com/in/ryanjhageman/) or [email](mailto:ryan@ryanhageman.dev). Let’s make something stellar!
 
