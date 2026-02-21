@@ -1,0 +1,11 @@
+{% assign button_text = include.button_text | default: "Show block" %}
+{% assign random_id = "now" | date: "%s" %}
+{% assign collapse_id = "collapse-" | append: random_id %}
+
+<button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#{{ collapse_id }}">
+  {{ button_text }}
+</button>
+
+<div class="collapse" id="{{ collapse_id }}" markdown="1">
+  {{ include.content }}
+</div>
