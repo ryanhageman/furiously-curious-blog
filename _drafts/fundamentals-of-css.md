@@ -30,8 +30,10 @@ ID's are for TRULY unique things. You 'can' use them for JavaScript hooks, but r
 
 Talk about how CSS is global. Do a couple things to make your life better:
 
-- BEM
 - Only use classes
+  - CSS Math isn't hard if you only style with classes. 1 class, your styles apply. 2 styles beats 1 style. Don't use ids and you don't have to fight with them. 
+- [BEM](https://getbem.com/)
+  - BEM stands for Block, Element, Modifier. Blocks are like components. They're a thing you're working on, like a card. A card can have a header, a body, a footer, unique card style buttons. They're all part of `.card`. Want to focus on the header? `.card__header` Have primary and secondary buttons? `.card__button--primary`. Why the double dashes? That way dashes still work to separate words. Is it pretty? Not really. Does it work? Yes. Since CSS is global, things like this help keep things namespaced and separate. It's not that crazy after a while, and there's usually only one class on an element instead of lots of utility classes. You also don't have to do CSS math like you do with utility classes. There's only one or two classes, they're namespaced, you know what's styling your element and where to find it. Writing these with Sass makes it easier too.
 
 ## Cascading Style Sheets
 
