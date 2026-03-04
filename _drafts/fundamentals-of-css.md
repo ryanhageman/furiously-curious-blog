@@ -6,9 +6,32 @@ tags:
 ---
 It's the "language" that people love to hate. They struggle with it, fight with it, say it's "not really a programming language". CSS. The web would be stuck in the 1990's without it. 
 
-The thing is, [CSS](https://en.wikipedia.org/wiki/CSS) is really important. And it's here to stay. Strangely enough, if you lean into its fundamentals instead of ignoring and fighting them, it's pretty great to work with. 
+The thing is, [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) is really important. And it's here to stay. Strangely enough, if you lean into its fundamentals instead of ignoring and fighting them, it's pretty great to work with. 
 
-This is the first in a series of posts to make CSS not only workable, but actually a bit fun. Understand a few fundamentals, follow a few rules, and CSS can be your new best friend. You might even prefer writing CSS to using the frameworks that make it "easier". 
+This is the first in a series of posts to make CSS not only workable, but actually a bit fun. Understand a few fundamentals, follow a few rules, and CSS can be your friend. You might even prefer writing CSS to using the frameworks that make it "easier". 
+
+## You're styling something else
+
+The styles don't work on their own. You're styling HTML. You've got to hook the styles to the HTML markup. There are a few basic ways to grab the HTML elements to style them.
+
+- The elements themselves
+- Classes
+- IDs
+
+Set base styles on the elements and move on. If you need to make a thing look different than the global basic element style, give it a class
+
+Use classes to style everything. IDs are not your friend for styling.
+
+Only use IDs if it's REALLY unique. Imagine you've got a group of minions. `class="minion"`. Then there's a Harry Styles minion. There's only one Harry Styles. `id="harry-styles" class="minion"` that's it. It builds on the fact that this Harry Styles minion is still a minion, but THIS PARTICULAR ONE is Harry Styles. 
+
+ID's are for TRULY unique things. You 'can' use them for JavaScript hooks, but remember, TRULY unique. `data` attributes are better as JavaScript hooks. 
+
+## It's Global
+
+Talk about how CSS is global. Do a couple things to make your life better:
+
+- BEM
+- Only use classes
 
 ## Cascading Style Sheets
 
