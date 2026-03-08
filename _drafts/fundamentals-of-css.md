@@ -6,27 +6,59 @@ tags:
 ---
 It's the "language" that people love to hate. They struggle with it, fight with it, say it's "not really a programming language". CSS. The web would be stuck in the 1990's without it. 
 
-The thing is, [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) is really important. And it's here to stay. Strangely enough, if you lean into its fundamentals instead of ignoring and fighting them, it's pretty great to work with. 
+The thing is, [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) is really important, it's here to stay, and strangely enough, if you lean into its fundamentals instead of ignoring and fighting them, it's pretty great to work with. 
 
 This is the first in a series of posts to make CSS not only workable, but actually a bit fun. Understand a few fundamentals, follow a few rules, and CSS can be your friend. You might even prefer writing CSS to using the frameworks that make it "easier". 
 
+## Before CSS
+
+- show site with styles turned off
+- show site with styles back on
+
+
 ## You're styling something else
 
-The styles don't work on their own. You're styling HTML. You've got to hook the styles to the HTML markup. There are a few basic ways to grab the HTML elements to style them.
+The styles don't work on their own. You're styling a document. How do you know what part of the document you're styling. If it were only a bunch of words, you wouldn't be able to. Good thing you've got the parts of the document tagged. Remember HTML and it's "tags"? That's what those are for. It creates a heirarchy, sure, but it also tags things as headings, paragraphs, spans that are a smidge different than the text around it, things like that. It even gets a bit better with articles, asides, and other semantic tags. 
 
-- The elements themselves
+With only HTML tags, you can make your document look pretty ok. But if you want more than that, there are a few options. There are a few basic ways to grab specific parts of your document to style them.
+
+- The base elements themselves (the tags)
 - Classes
 - IDs
 
-Set base styles on the elements and move on. If you need to make a thing look different than the global basic element style, give it a class
+### Base HTML Elements
 
-Use classes to style everything. IDs are not your friend for styling.
+While there are a lot of different HTML tags out there, you don't have to style them all. Most of them either are fine the way they are, or you'll transform into something more in the next layer. You might not need to do anything on this layer. Some very basic things to consider. 
+
+- body
+  - set a font
+  - set a size
+- headings
+  - set a font 
+  - set sizes for each of them, if you want
+  - set weights
+  - etc
+
+You might choose to do more, but don't worry too much about these. Most of your styles will be written in the next layer.
+
+### Classes
+
+Use classes to style everything. This is where you can get specific with the things you're building. Cards, navigation dropdowns, layouts, these are the components you use to assemble your document into an app or site. You can use classes to name these different components, then style them and assemble them on the screen.
+
+Only use classes for these. IDs are not your friend for styling. 
+
+### IDs
 
 Only use IDs if it's REALLY unique. Imagine you've got a group of minions. `class="minion"`. Then there's a Harry Styles minion. There's only one Harry Styles. `id="harry-styles" class="minion"` that's it. It builds on the fact that this Harry Styles minion is still a minion, but THIS PARTICULAR ONE is Harry Styles. 
 
 ID's are for TRULY unique things. You 'can' use them for JavaScript hooks, but remember, TRULY unique. `data` attributes are better as JavaScript hooks. 
 
-## It's Global
+
+## Naming Your Classes
+
+Names are important. Those names are how you identify which styles to apply to each element. CSS creates one big list of styles and uses that list to make the document look nice. Thing is, there's only ONE list, and it's used everywhere. AND, if something is set, then changed later in the list, the last set of styles wins. This is the 'cascade'. We'll dive into that a bit later. 
+
+Because there's only ONE list (that means its global), you need to have a strategy to name things. There are a couple basic ways to approach this. Give things unique names, or make a bunch of general utilities and slap them all over the place. Each has its pros and cons. I like a combination of the two, but lean very strongly toward unique names for the components of your site with a few utility classes. 
 
 Talk about how CSS is global. Do a couple things to make your life better:
 
