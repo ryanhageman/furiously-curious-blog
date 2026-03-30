@@ -8,7 +8,7 @@ It's the "language" that people love to hate. They struggle with it, fight with 
 
 The thing is, [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) is really important, it's here to stay, and strangely enough, if you lean into its fundamentals instead of ignoring and fighting them, it's pretty great to work with. 
 
-This is the first in a series of posts to make CSS not only workable, but actually a bit fun. Understand a few fundamentals, follow a few rules, and CSS can be your friend. You might even prefer writing CSS to using the frameworks that make it "easier". 
+This a series of posts to make CSS not only workable, but actually a bit fun. Understand a few fundamentals, follow a few rules, and CSS can be your friend. You might even prefer writing CSS to using the frameworks that make it "easier". 
 
 ## Before CSS
 
@@ -18,9 +18,13 @@ This is the first in a series of posts to make CSS not only workable, but actual
 
 ## You're styling something else
 
-The styles don't work on their own. You're styling a document. How do you know what part of the document you're styling. If it were only a bunch of words, you wouldn't be able to. Good thing you've got the parts of the document tagged. Remember HTML and it's "tags"? That's what those are for. It creates a heirarchy, sure, but it also tags things as headings, paragraphs, spans that are a smidge different than the text around it, things like that. It even gets a bit better with articles, asides, and other semantic tags. 
+The styles don't work on their own. You're styling a document. But how do you know what part of the document you're styling. 
 
-With only HTML tags, you can make your document look pretty ok. But if you want more than that, there are a few options. There are a few basic ways to grab specific parts of your document to style them.
+If the document that needs styling were only a bunch of words, you wouldn't be able to style idividual parts differently. Remember HTML and it's "tags"? That's what those are for. It creates a heirarchy, sure, but it also tags things as headings and paragraphs. It lets you use spans to tag text that's a smidge different than the text around it. It even gives you articles, asides, and other semantic tags. 
+
+With only HTML tags, you can make your document look ok. You get to set your foundations for basic things like what paragraph text should look like, how big the different headings are, and should links be blue and underlined. After this, the page has some character. Unfortunately, it's limited. 
+
+We've got 3 ways to style this document.
 
 - The base elements themselves (the tags)
 - Classes
@@ -41,17 +45,27 @@ While there are a lot of different HTML tags out there, you don't have to style 
 
 You might choose to do more, but don't worry too much about these. Most of your styles will be written in the next layer.
 
+You can make your image 50% the width of the screen, sure. Unfortunately, _ALL_ your images are now 50% the width of the screen. ALL your paragraphs have that same line spacing. Every single unordered list looks the exact same, making it a bit of a challenge to create dropdown lists in the navigation bar.
+
+Sure, there are ways to deal with some of this, but fortunately we don't have to. We can set base element styles as our foundation, but we'll grab specific things in the next styling layer.
+
 ### Classes
 
-Use classes to style everything. This is where you can get specific with the things you're building. Cards, navigation dropdowns, layouts, these are the components you use to assemble your document into an app or site. You can use classes to name these different components, then style them and assemble them on the screen.
+Use classes to style everything. period. full stop.
+
+This is where you can get specific with the things you're building. Cards, navigation dropdowns, layouts, these are the components you use to assemble your document into an app or site. You can use classes to name these different components, then style them and assemble them on the screen.
 
 Only use classes for these. IDs are not your friend for styling. 
 
 ### IDs
 
-Only use IDs if it's REALLY unique. Imagine you've got a group of minions. `class="minion"`. Then there's a Harry Styles minion. There's only one Harry Styles. `id="harry-styles" class="minion"` that's it. It builds on the fact that this Harry Styles minion is still a minion, but THIS PARTICULAR ONE is Harry Styles. 
+Only use IDs if it's **REALLY** unique. Imagine you've got a group of minions. `class="minion"`. Then there's a _Harry Styles_ minion. 
 
-ID's are for TRULY unique things. You 'can' use them for JavaScript hooks, but remember, TRULY unique. `data` attributes are better as JavaScript hooks. 
+There's only one Harry Styles, we absolutely all know that. `id="harry-styles" class="minion"` that's it. It builds on the fact that this Harry Styles minion is still a minion, but _THIS PARTICULAR ONE_ is Harry Styles. 
+
+Would I do this? It's unlikely. We can identify Harry with a class as well. `class=minion harry-styles`. There's not much upside to making it an id. On the other hand, it can make your "CSS math" harder later on. I'm sticking to my guns here and I'll only style things with classes.
+
+ID's are for **TRULY** unique things. You 'can' use them for JavaScript hooks, but remember, **TRULY** unique. `data` attributes are better as JavaScript hooks. I leave the ids for the libraries that require me to use them. Whether I think it was a good design decision on the part of the person who wrote that library is a different post. If it's good enough for me to use it, I'm good with their choices.
 
 
 ## Naming Your Classes
