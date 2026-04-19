@@ -76,3 +76,5 @@ Every chat, the context improves. The more you use it, the better it gets.
 You don't need to be a prompt engineer. You don't need to remember a formula. Have a chat and save some text.
 
 That's the whole system.
+
+Want some help getting started? Check out [Creating a Memory Block]({% post_url 2026-04-11-creating-a-memory-block %}). 
