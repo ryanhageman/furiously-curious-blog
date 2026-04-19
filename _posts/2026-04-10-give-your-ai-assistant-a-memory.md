@@ -9,6 +9,7 @@ tags:
 description: AI assistants start fresh every chat. Here's how to build a portable
   memory system that works with any assistant.
 date: 2026-04-10 00:00 +0000
+image: /assets/images/give-your-ai-assistant-a-memory-hero-image.webp
 ---
 "The sky is ___."
 
