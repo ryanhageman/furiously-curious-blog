@@ -37,7 +37,7 @@ The usual advice is to get better at "[prompt engineering](https://en.wikipedia.
 
 ## Let the AI Engineer the Prompt
 
-You know who knows better than anyone what context an AI assistant needs to do good work?
+You know who knows what context an AI assistant needs most?
 
 The AI assistant.
 
@@ -55,7 +55,7 @@ That's your memory block. Everything the assistant needs to know about that proj
 
 ## Your Memory Journal
 
-Don't stop at one. You can have a memory block for each project you're working on. One for how you like to collaborate. One for your morning workflow. Whatever you need.
+Don't stop at one. You can have a memory block for each project you're working on. A block for how you like to collaborate. A block that has your assistant walk you through your morning workflow. Whatever you need.
 
 Save them all in one place. A folder in your notes, a few [markdown files](https://www.markdownguide.org/getting-started/), whatever works for you. It's your memory journal. Just like the scrapbook Adam Sandler made for Drew Barrymore so she could wake up every morning and know who she was and what her life looked like.
 
@@ -69,7 +69,7 @@ Since they're text files sitting in your notes, you own them. Nothing's locked i
 
 ## It Gets Better Every Chat
 
-At the end of any chat, ask the assistant what you learned. Missing context, wrong assumptions, things that clicked, things that didn't. Paste in your current memory block and ask it to suggest updates. You confirm what you want, it returns the updated block. Copy it and replace the old one.
+At the end of any chat, ask the assistant what it learned. Missing context, wrong assumptions, things that clicked, things that didn't. Paste in your current memory block and ask it to suggest updates. You confirm what you want, it returns the updated block. Copy it and replace the old one.
 
 Every chat, the context improves. The more you use it, the better it gets.
 
